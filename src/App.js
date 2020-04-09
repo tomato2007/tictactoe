@@ -1,17 +1,34 @@
 import React from 'react';
-// import Field from 'Field'
+import { Board } from './Board';
+import styled from 'styled-components';
+
+const Game = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+
+const GameInfo = styled.div`
+    margin-left: 20px;
+`;
 
 const App = React.memo(() => {
 
-  return (
-      <div className="App">
-        <h1>Hello World</h1>
-          {/* <Field /> */}
-      </div>
-    );
-  }
-)
+		return (
+			<Game>
+				<div className="game-board">
+					<Board />
+				</div>
+				<GameInfo>
+					<div>{/* status */}</div>
+					<ol>{/* TODO */}</ol>
+                </GameInfo>
+			</Game>
+		);
+	}
+);
 
 export {
-   App
+	App
 };
+
+
