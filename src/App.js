@@ -21,7 +21,7 @@ const App = React.memo(() => {
 				<GameInfo>
 					<div>{/* status */}</div>
 					<ol>{/* TODO */}</ol>
-                </GameInfo>
+				</GameInfo>
 			</Game>
 		);
 	}

@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Square} from './Square';
+import { Square } from './Square';
 
 // const
 
 class Board extends React.Component {
-	renderSquare(i) {
+	renderSquare (i) {
 		return <Square value={i} />;
 	}
 
-	render() {
+	render () {
 		const status = 'Next player: X';
 
 		return (
