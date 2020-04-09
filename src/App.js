@@ -1,12 +1,17 @@
 import React from 'react';
-import Field from 'Field'
+// import Field from 'Field'
 
-function App() {
+const App = React.memo(() => {
+
   return (
-    <div className="App">
-        <Field />
-    </div>
-  );
-}
+      <div className="App">
+        <h1>Hello World</h1>
+          {/* <Field /> */}
+      </div>
+    );
+  }
+)
 
-export default App;
+export {
+   App
+};
