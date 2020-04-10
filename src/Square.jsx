@@ -14,17 +14,25 @@ const Cell = styled.button`
 	padding: 0;
 	text-align: center;
 	width: 34px;
+	:focus {
+	outline: none
+	}
 `;
 
-class Square extends React.Component {
-	render () {
+const Square = React.memo(({value, onClick}) => {
+	// const [value, setValue] = React.useState(null);
 		return (
-			<Cell className="square">
-				{this.props.value}
+			<Cell
+				className="square"
+				onClick={onClick}
+			>
+				{value}
 			</Cell>
 		);
 	}
-}
+)
+
+
 
 export {
 	Square
