@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/useDidMountEffect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/useDidMountEffect.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +81,8 @@
       <workItem from="1586458487852" duration="4803000" />
       <workItem from="1586498414079" duration="18000" />
       <workItem from="1586521423825" duration="9006000" />
-      <workItem from="1586633518735" duration="3630000" />
+      <workItem from="1586633518735" duration="3744000" />
+      <workItem from="1586720169045" duration="2294000" />
     </task>
     <servers />
   </component>

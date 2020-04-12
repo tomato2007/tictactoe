@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Square } from './Square';
-import { calculateWinner } from 'utils/calculateWinner';
-import { useDidMountEffect } from 'utils/useDidMountEffect';
 
 const BoardRow = styled.div`
 	:after {
@@ -11,11 +9,6 @@ const BoardRow = styled.div`
 		display: table;
 	}
 `;
-
-const Status = styled.div`
-	margin-bottom: 10px;
-`;
-
 
 const Board = React.memo(({
 	squares = [],
@@ -30,7 +23,6 @@ const Board = React.memo(({
 
 	return (
 		<>
-			{/*<Status className="status">{status(squares)}</Status>*/}
 			<BoardRow className="board-row">
 				{renderSquare(0)}
 				{renderSquare(1)}
