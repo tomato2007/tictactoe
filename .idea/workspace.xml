@@ -4,8 +4,7 @@
     <list default="true" id="fe8e1459-a069-42d1-a2c4-5784fd9e560c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/useDidMountEffect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/useDidMountEffect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +81,9 @@
       <workItem from="1586498414079" duration="18000" />
       <workItem from="1586521423825" duration="9006000" />
       <workItem from="1586633518735" duration="3744000" />
-      <workItem from="1586720169045" duration="2294000" />
+      <workItem from="1586720169045" duration="2609000" />
+      <workItem from="1586757793174" duration="25000" />
+      <workItem from="1586804929006" duration="1886000" />
     </task>
     <servers />
   </component>
