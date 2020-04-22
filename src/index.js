@@ -12,17 +12,35 @@ const initialState = {
 const ACTION_CHANGE_FIRST = 'ACTION_CHANGE_FIRST';
 const ACTION_CHANGE_SECOND = 'ACTION_CHANGE_SECOND';
 
-const actionChangeFirst = {
-	type: ACTION_CHANGE_FIRST,
-	payload: 'FIRST'
+const changeChangeFirst = (newFirst) => {
+	return {
+		type: ACTION_CHANGE_FIRST,
+		payload: newFirst
+	}
 };
 
-const actionChangeSecond = {
-	type: ACTION_CHANGE_SECOND,
-	payload: 'SECOND'
+const actionChangeSecond = (newSecond) => {
+	return {
+		type: ACTION_CHANGE_SECOND,
+		payload: newSecond
+	}
 };
 
 const rootReducer = (state = initialState, action) => {
+	switch (action.type) {
+		case ACTION_CHANGE_FIRST:
+			return {
+				...state,
+				first: action.payload
+			};
+		case ACTION_CHANGE_SECOND:
+			return {
+				...state,
+				second: action.payload
+			};
+		default:
+			return state
+	}
 	return state;
 }
 
