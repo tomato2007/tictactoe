@@ -2,6 +2,7 @@ import React from 'react';
 import { Board } from './Board';
 import styled from 'styled-components';
 import { calculateWinner } from 'utils/calculateWinner';
+import {connect} from 'react-redux';
 // import { useDidMountEffect } from 'utils/useDidMountEffect';
 
 import 'style/style.css'
@@ -19,7 +20,10 @@ const NewGame = styled.button`
 	margin-top: 25px;
 `;
 
-const App = React.memo(() => {
+const App = React.memo(({
+	first,
+	second
+}) => {
 
 		const initialBoard = Array(9).fill(null);
 		const [localHistory, setLocalHistory] = React.useState([{squares: initialBoard}]);
@@ -66,7 +70,7 @@ const App = React.memo(() => {
 				</li>
 			)
 		});
-
+	console.log('App', first, second);
 		return (
 			<Game>
 				<div className="game-board">
@@ -86,8 +90,17 @@ const App = React.memo(() => {
 	}
 );
 
+const mapStateToProps = state => {
+	return {
+		first: state.first,
+		second: state.second
+	}
+};
+
+const WrappedApp = connect(mapStateToProps)(App);
+
 export {
-	App
+	WrappedApp
 };
 
 
