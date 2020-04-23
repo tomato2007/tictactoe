@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe8e1459-a069-42d1-a2c4-5784fd9e560c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Square.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Square.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +55,9 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\Dev\github\tictactoe\src\components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="I:\Dev\github\tictactoe\src\utils" />
     </key>
@@ -85,7 +94,8 @@
       <workItem from="1586804929006" duration="2402000" />
       <workItem from="1586844068500" duration="605000" />
       <workItem from="1587560493199" duration="3038000" />
-      <workItem from="1587566674170" duration="1716000" />
+      <workItem from="1587566674170" duration="1937000" />
+      <workItem from="1587650733077" duration="4336000" />
     </task>
     <servers />
   </component>

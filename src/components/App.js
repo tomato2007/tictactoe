@@ -3,7 +3,13 @@ import { Board } from './Board';
 import styled from 'styled-components';
 import { calculateWinner } from 'utils/calculateWinner';
 import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {
+	actionChangeFirst,
+	actionChangeSecond
+} from 'store/actions'
 // import { useDidMountEffect } from 'utils/useDidMountEffect';
+
 
 import 'style/style.css'
 
@@ -22,13 +28,12 @@ const NewGame = styled.button`
 
 const App = React.memo(({
 	first,
-	second
+	second,
+	changeFirst
 }) => {
 
 		const initialBoard = Array(9).fill(null);
 		const [localHistory, setLocalHistory] = React.useState([{squares: initialBoard}]);
-		const [xIsNext, setXIsNext] = React.useState(true);
-
 
 		const handleClick = (i) => {
 			const history = localHistory;
@@ -37,15 +42,15 @@ const App = React.memo(({
 			if (calculateWinner(squares) || squares[i]) {
 				return undefined;
 			}
-			squares[i] = xIsNext ? 'X' : 'O';
+			squares[i] = first ? 'X' : 'O';
 			history.push({squares});
 			setLocalHistory(history);
-			setXIsNext(!xIsNext);
+			changeFirst(!first);
 		};
 
 		const handleNewGame = () => {
 			console.log('New game start!!!');
-			setXIsNext(true);
+			changeFirst(true);
 			setLocalHistory([{squares: initialBoard}])
 		};
 
@@ -54,7 +59,7 @@ const App = React.memo(({
 			if (winner) {
 				return `Победил ${winner}`;
 			} else {
-				return `Следующий ход: ${xIsNext ? 'X' : 'O'}`;
+				return `Следующий ход: ${first ? 'X' : 'O'}`;
 			}
 		};
 
@@ -70,7 +75,7 @@ const App = React.memo(({
 				</li>
 			)
 		});
-	console.log('App', first, second);
+	console.log('App', changeFirst);
 		return (
 			<Game>
 				<div className="game-board">
@@ -84,7 +89,6 @@ const App = React.memo(({
 					<NewGame onClick={handleNewGame}>Начать заново</NewGame>
 					<ol>{moves}</ol>
 				</GameInfo>
-
 			</Game>
 		);
 	}
@@ -97,7 +101,14 @@ const mapStateToProps = state => {
 	}
 };
 
-const WrappedApp = connect(mapStateToProps)(App);
+const mapDispatchToProps = dispatch => {
+	return {
+		changeFirst: bindActionCreators(actionChangeFirst, dispatch),
+		changeSecond: bindActionCreators(actionChangeSecond, dispatch)
+	}
+}
+
+const WrappedApp = connect(mapStateToProps, mapDispatchToProps)(App);
 
 export {
 	WrappedApp
