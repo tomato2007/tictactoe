@@ -1,5 +1,5 @@
-import {WrappedApp} from './App';
+import {TicTacToeContainer} from './TicTacToeContainer';
 
 export {
-	WrappedApp
+	TicTacToeContainer
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { WrappedApp as App } from 'components/App';
+import { TicTacToeContainer as App } from 'components';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { rootReducer } from 'store/reducers'

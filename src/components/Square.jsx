@@ -15,12 +15,11 @@ const Cell = styled.button`
 	text-align: center;
 	width: 34px;
 	:focus {
-	outline: none
+		outline: none
 	}
 `;
 
 const Square = React.memo(({value, onClick}) => {
-	// const [value, setValue] = React.useState(null);
 		return (
 			<Cell
 				className="square"
@@ -30,9 +29,7 @@ const Square = React.memo(({value, onClick}) => {
 			</Cell>
 		);
 	}
-)
-
-
+);
 
 export {
 	Square
