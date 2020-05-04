@@ -45,12 +45,12 @@ const TicTacToe = React.memo(({
 	}
 );
 
-TicTacToe.PropTypes = {
+TicTacToe.propTypes = {
 	handleNewGame: PropTypes.func.isRequired,
 	handleClick: PropTypes.func.isRequired,
 	status: PropTypes.func.isRequired,
 	localHistory: PropTypes.array.isRequired,
-	moves: PropTypes.func.isRequired
+	moves: PropTypes.array.isRequired
 };
 
 export {

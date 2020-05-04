@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fe8e1459-a069-42d1-a2c4-5784fd9e560c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Square.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Square.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TicTacToe.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TicTacToe.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -97,7 +94,7 @@
       <workItem from="1588084170875" duration="1983000" />
       <workItem from="1588226254560" duration="12000" />
       <workItem from="1588572391393" duration="802000" />
-      <workItem from="1588586812736" duration="486000" />
+      <workItem from="1588586812736" duration="745000" />
     </task>
     <servers />
   </component>
