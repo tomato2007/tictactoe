@@ -17,26 +17,28 @@ const Board = React.memo(({
 
 	const createBoard = () => {
 		const initialBoard = Array(3).fill(null);
-		const rows = []
+		const rows = [];
+		let counter = 0
 		for (let i = 0; i < 3; i++) {
 			const row = <BoardRow className="board-row">
-				{initialBoard.map((elem, ii) => {
-					// console.log(elem, ii);
-					return renderSquare(ii + i)
+				{initialBoard.map(() => {
+					return renderSquare(counter++)
 				})
 				}
 			</BoardRow>;
 			rows.push(row)
 		}
+		return rows
 	}
 
 	const renderSquare = (i) => {
 		return <Square
+			key={i}
 			value={squares[i]}
 			onClick={() => onClick(i)}
 		/>;
 	};
-
+console.log('render Board');
 	return (
 		<>
 			{createBoard()}

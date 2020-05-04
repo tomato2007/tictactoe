@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Board } from './Board';
 import styled from 'styled-components';
 
@@ -25,7 +26,7 @@ const TicTacToe = React.memo(({
 	status,
 	moves
 }) => {
-	console.log('render TTT');
+	console.log('render TTT',moves, typeof moves);
 		return (
 			<Game>
 				<div className="game-board">
@@ -43,6 +44,14 @@ const TicTacToe = React.memo(({
 		);
 	}
 );
+
+TicTacToe.PropTypes = {
+	handleNewGame: PropTypes.func.isRequired,
+	handleClick: PropTypes.func.isRequired,
+	status: PropTypes.func.isRequired,
+	localHistory: PropTypes.array.isRequired,
+	moves: PropTypes.func.isRequired
+};
 
 export {
 	TicTacToe

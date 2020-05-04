@@ -19,9 +19,10 @@ const Cell = styled.button`
 	}
 `;
 
-const Square = React.memo(({value, onClick}) => {
+const Square = React.memo(({value, onClick, ...props}) => {
 		return (
 			<Cell
+				{...props}
 				className="square"
 				onClick={onClick}
 			>

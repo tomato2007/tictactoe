@@ -45,7 +45,7 @@ const TTTContainer = React.memo(({
 			`Go to move # ${move}` :
 			'Go to game start';
 		return (
-			<li>
+			<li key={`move_#${move}`}>
 				<button
 					onClick={() => console.log('move to ...')}
 				>{desc}</button>
