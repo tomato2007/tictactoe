@@ -25,6 +25,7 @@ const TicTacToe = React.memo(({
 	status,
 	moves
 }) => {
+	console.log('render TTT');
 		return (
 			<Game>
 				<div className="game-board">
