@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 import styled from 'styled-components';
 
 const Cell = styled.button`
@@ -19,17 +19,17 @@ const Cell = styled.button`
 	}
 `;
 
-const Square = React.memo(({value, onClick, ...props}) => {
-		return (
-			<Cell
-				{...props}
-				className="square"
-				onClick={onClick}
-			>
-				{value}
-			</Cell>
-		);
-	}
+const Square = memo(({ value, onClick, ...props }) => {
+	return (
+		<Cell
+			{...props}
+			className="square"
+			onClick={onClick}
+		>
+			{value}
+		</Cell>
+	);
+}
 );
 
 export {

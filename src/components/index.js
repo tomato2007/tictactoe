@@ -1,4 +1,4 @@
-import {TicTacToeContainer} from './TicTacToeContainer';
+import { TicTacToeContainer } from './TicTacToeContainer';
 
 export {
 	TicTacToeContainer

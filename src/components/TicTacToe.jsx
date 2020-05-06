@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Board } from './Board';
+import { BoardContainer as Board } from './Board/BoardContainer';
 import styled from 'styled-components';
 
 
@@ -26,7 +26,6 @@ const TicTacToe = React.memo(({
 	status,
 	moves
 }) => {
-	console.log('render TTT',moves, typeof moves);
 		return (
 			<Game>
 				<div className="game-board">
@@ -44,7 +43,7 @@ const TicTacToe = React.memo(({
 		);
 	}
 );
-
+	
 TicTacToe.propTypes = {
 	handleNewGame: PropTypes.func.isRequired,
 	handleClick: PropTypes.func.isRequired,
