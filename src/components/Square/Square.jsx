@@ -23,7 +23,7 @@ const Square = memo(({ value, onClick, ...props }) => {
 	return (
 		<Cell
 			{...props}
-			className="square"
+			className='square'
 			onClick={onClick}
 		>
 			{value}

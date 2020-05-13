@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe8e1459-a069-42d1-a2c4-5784fd9e560c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Board/BoardContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Square/SquareContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Board/BoardContainer.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Square/SquareContainer.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/Board.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Square.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Square/Square.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TicTacToe.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TicTacToe.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/Board.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Board/BoardContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Board/BoardContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Square/Square.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Square/Square.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="React" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -40,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Square" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -54,11 +53,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\Dev\github\tictactoe\src\components\Square" />
+      <recent name="I:\Dev\github\tictactoe\src\utils" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="I:\Dev\github\tictactoe\src\components" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="I:\Dev\github\tictactoe\src\utils" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -104,7 +104,9 @@
       <workItem from="1588776177270" duration="99000" />
       <workItem from="1588777256632" duration="873000" />
       <workItem from="1588791951421" duration="69000" />
-      <workItem from="1588792237016" duration="2044000" />
+      <workItem from="1588792237016" duration="2086000" />
+      <workItem from="1588831200303" duration="25000" />
+      <workItem from="1589379592892" duration="3255000" />
     </task>
     <servers />
   </component>

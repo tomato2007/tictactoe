@@ -1,7 +1,6 @@
 import React, { memo } from 'react';
 import PropTypes from 'prop-types';
-import { Board } from './Board';
-import { SquareContainer as Square } from '../Square/SquareContainer';
+import { SquareContainer } from '../Square/SquareContainer';
 import styled from 'styled-components';
 
 
@@ -14,10 +13,10 @@ const BoardRow = styled.div`
 `;
 
 export const BoardContainer = memo(({
-	onClick,
-	squares,
-	...props
-}) => {
+	                                    onClick,
+	                                    squares,
+	                                    ...props
+                                    }) => {
 
 	const createBoard = () => {
 		const initialBoard = Array(3).fill(null);
@@ -36,21 +35,24 @@ export const BoardContainer = memo(({
 	};
 
 	const renderSquare = (i) => {
-		return <Square
+		return <SquareContainer
+			className="square-container"
 			key={i}
 			value={squares[i]}
 			onClick={() => onClick(i)}
 		/>;
 	};
 
-	return <Board
-		{...props}
-		createBoard={createBoard}
-	/>
+	return <>
+		<div>test</div>w
+		{createBoard()}
+		<div>test</div>
+		</>
 });
 
 BoardContainer.defaultProps = {
-	onClick: () => {},
+	onClick: () => {
+	},
 	squares: []
 };
 
