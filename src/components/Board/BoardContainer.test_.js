@@ -27,8 +27,14 @@ afterEach(() => {
 	container.remove();
 	container = null;
 });
-
-it('render some component', () => {
+// test('some desc', () => {
+// 	const square = document.querySelectorAll('.square');
+// 	const length = square.length;
+// 	console.log('square', length);
+// 	expect(length).toEqual(0)
+//
+// })
+test('render some component', () => {
 	act(() => {
 		render(<><BoardRow>
 			<SquareContainer />
@@ -51,6 +57,7 @@ it('render some component', () => {
 	const square = document.querySelectorAll('.square');
 	const length = square.length;
 	console.log('square', length);
-	expect(length).toEqual(9)
+	expect(length).toBe(9)
+
 
 });
