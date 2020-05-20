@@ -20,6 +20,6 @@ SquareContainer.propTypes = {
 };
 
 SquareContainer.defaultProps = {
-	value: 'x',
+	value: '',
 	onClick: () => {}
 }

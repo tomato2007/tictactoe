@@ -44,9 +44,7 @@ export const BoardContainer = memo(({
 	};
 
 	return <>
-		<div>test</div>w
 		{createBoard()}
-		<div>test</div>
 		</>
 });
 
